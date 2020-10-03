@@ -1,0 +1,36 @@
+:host {
+  .cube-container {
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #1a344c;
+    height: 100vh;
+    padding: 16px;
+    overflow-y: scroll;
+    .cubes {
+      .cube-entity {
+        display: flex;
+        flex-direction: row;
+        .cube {
+          .cube-image {
+            width: 260px;
+            height: auto;
+            img {
+              width: 260px;
+            }
+          }
+          .cube-name {
+            font-size: large;
+            color: #eaeaea;
+          }
+        }
+        .card-list {
+          margin-left: 32px;
+          flex-grow: 1;
+          color: #eaeaea;
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}

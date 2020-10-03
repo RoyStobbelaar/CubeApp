@@ -1,0 +1,22 @@
+<div class="cube-container">
+  <div class="cubes">
+    <div *ngFor="let cube of cubes" class="cube-entity">
+      <div class="cube">
+        <div class="cube-image">
+          <img [src]="cube.image" />
+        </div>
+        <div class="cube-name">
+          {{ cube.name }}
+        </div>
+        <div class="sort">
+          Sort options
+        </div>
+      </div>
+      <div class="card-list">
+        <div class="card" *ngFor="let item of cube.cards">
+          {{ item.name }}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
